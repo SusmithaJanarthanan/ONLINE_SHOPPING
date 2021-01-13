@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6bd3d7b602274ef28b9b1f37a7d1046e" Name="Diagram1">
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Cart" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Category" Width="1.5" PointX="3.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Order" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Product" Width="1.5" PointX="6" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Retailer" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Update_Products" Width="1.5" PointX="11.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.User" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Final_Shopping_dbModel.Wishlist" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Cart__Prod_Id__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Cart__User_Id__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Products__Catego__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Orders__Prod_id__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Orders__Retail_i__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Orders__User_id__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Products__Retail__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Update_Pr__Prod___3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Wishlist__Prod_I__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Update_Pr__Retai__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="Final_Shopping_dbModel.FK__Wishlist__User_I__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

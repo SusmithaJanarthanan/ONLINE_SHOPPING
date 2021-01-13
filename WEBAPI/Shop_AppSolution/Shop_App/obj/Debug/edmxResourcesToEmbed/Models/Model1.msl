@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Shopping_AppModelStoreContainer" CdmEntityContainer="Shopping_AppEntities">
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="Cart_Id" ColumnName="Cart_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Prod_id" ColumnName="Prod_id" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Retail_id" ColumnName="Retail_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retailers">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Retailer">
+        <MappingFragment StoreEntitySet="Retailers">
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Retail_Password" ColumnName="Retail_Password" />
+          <ScalarProperty Name="Retail_Phone" ColumnName="Retail_Phone" />
+          <ScalarProperty Name="Retail_Email" ColumnName="Retail_Email" />
+          <ScalarProperty Name="Retail_Status" ColumnName="Retail_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Update_Products">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Update_Products">
+        <MappingFragment StoreEntitySet="Update_Products">
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Update_Id" ColumnName="Update_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Update_Status" ColumnName="Update_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Shopping_AppModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Email" ColumnName="User_Email" />
+          <ScalarProperty Name="User_Phone" ColumnName="User_Phone" />
+          <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+          <ScalarProperty Name="User_City" ColumnName="User_City" />
+          <ScalarProperty Name="User_Country" ColumnName="User_Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wishlists">
+      <EntityTypeMapping TypeName="Shopping_AppModel.Wishlist">
+        <MappingFragment StoreEntitySet="Wishlist">
+          <ScalarProperty Name="Wishlist_Id" ColumnName="Wishlist_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Retailer_Revenue" FunctionName="Shopping_AppModel.Store.Retailer_Revenue">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Shopping_AppModel.Retailer_Revenue_Result">
+          <ScalarProperty Name="Retail_id" ColumnName="Retail_id" />
+          <ScalarProperty Name="Prod_id" ColumnName="Prod_id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Retailer_Revenues" FunctionName="Shopping_AppModel.Store.Retailer_Revenues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Shopping_AppModel.Retailer_Revenues_Result">
+          <ScalarProperty Name="Retail_id" ColumnName="Retail_id" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Prod_id" ColumnName="Prod_id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="retailer_revdetails" FunctionName="Shopping_AppModel.Store.retailer_revdetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Shopping_AppModel.retailer_revdetails_Result">
+          <ScalarProperty Name="Retail_id" ColumnName="Retail_id" />
+          <ScalarProperty Name="Prod_id" ColumnName="Prod_id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="retailerdetailes" FunctionName="Shopping_AppModel.Store.retailerdetailes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Shopping_AppModel.retailerdetailes_Result">
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Retail_Password" ColumnName="Retail_Password" />
+          <ScalarProperty Name="Retail_Phone" ColumnName="Retail_Phone" />
+          <ScalarProperty Name="Retail_Email" ColumnName="Retail_Email" />
+          <ScalarProperty Name="Retail_Status" ColumnName="Retail_Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

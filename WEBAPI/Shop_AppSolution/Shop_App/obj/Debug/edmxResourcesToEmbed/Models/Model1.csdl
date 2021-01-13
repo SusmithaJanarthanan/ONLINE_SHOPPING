@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Shopping_AppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="Cart_Id" />
+    </Key>
+    <Property Name="Cart_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Id" Type="Int32" />
+    <Property Name="Prod_Id" Type="Int32" />
+    <Property Name="Prod_Quantity" Type="Int32" />
+    <Property Name="Prod_Price" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Cart__Prod_Id__4CA06362" FromRole="Cart" ToRole="Products" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Cart__User_Id__4BAC3F29" FromRole="Cart" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Category_Id" />
+    </Key>
+    <Property Name="Category_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Products__Catego__412EB0B6" FromRole="Category" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Order_Id" />
+    </Key>
+    <Property Name="Order_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_id" Type="Int32" />
+    <Property Name="Prod_id" Type="Int32" />
+    <Property Name="Prod_Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Prod_Quantity" Type="Int32" />
+    <Property Name="Retail_id" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Orders__Prod_id__5070F446" FromRole="Orders" ToRole="Products" />
+    <NavigationProperty Name="Retailer" Relationship="Self.FK__Orders__Retail_i__5165187F" FromRole="Orders" ToRole="Retailers" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Orders__User_id__4F7CD00D" FromRole="Orders" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Prod_Id" />
+    </Key>
+    <Property Name="Prod_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Id" Type="Int32" />
+    <Property Name="Prod_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Prod_Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Prod_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Prod_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prod_Quantity" Type="Int32" />
+    <Property Name="Prod_Status" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Retail_Id" Type="Int32" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK__Cart__Prod_Id__4CA06362" FromRole="Products" ToRole="Cart" />
+    <NavigationProperty Name="Category" Relationship="Self.FK__Products__Catego__412EB0B6" FromRole="Products" ToRole="Category" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Prod_id__5070F446" FromRole="Products" ToRole="Orders" />
+    <NavigationProperty Name="Retailer" Relationship="Self.FK__Products__Retail__4222D4EF" FromRole="Products" ToRole="Retailers" />
+    <NavigationProperty Name="Update_Products" Relationship="Self.FK__Update_Pr__Prod___5441852A" FromRole="Products" ToRole="Update_Products" />
+    <NavigationProperty Name="Wishlists" Relationship="Self.FK__Wishlist__Prod_I__48CFD27E" FromRole="Products" ToRole="Wishlist" />
+  </EntityType>
+  <EntityType Name="Retailer">
+    <Key>
+      <PropertyRef Name="Retail_Id" />
+    </Key>
+    <Property Name="Retail_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Company_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Retail_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Retail_Password" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Retail_Phone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Retail_Email" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Retail_Status" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Retail_i__5165187F" FromRole="Retailers" ToRole="Orders" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Products__Retail__4222D4EF" FromRole="Retailers" ToRole="Products" />
+    <NavigationProperty Name="Update_Products" Relationship="Shopping_AppModel.FK__Update_Pr__Retai__73BA3083" FromRole="Retailer" ToRole="Update_Products" />
+  </EntityType>
+  <EntityType Name="Update_Products">
+    <Key>
+      <PropertyRef Name="Update_Id" />
+    </Key>
+    <Property Name="Update_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Prod_Id" Type="Int32" />
+    <Property Name="Prod_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Prod_Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Prod_Quantity" Type="Int32" />
+    <Property Name="Update_Status" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Update_Pr__Prod___5441852A" FromRole="Update_Products" ToRole="Products" />
+    <Property Name="Retail_Id" Type="Int32" />
+    <NavigationProperty Name="Retailer" Relationship="Shopping_AppModel.FK__Update_Pr__Retai__73BA3083" FromRole="Update_Products" ToRole="Retailer" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="User_Id" />
+    </Key>
+    <Property Name="User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="User_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="User_City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="User_Country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK__Cart__User_Id__4BAC3F29" FromRole="Users" ToRole="Cart" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__User_id__4F7CD00D" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="Wishlists" Relationship="Self.FK__Wishlist__User_I__47DBAE45" FromRole="Users" ToRole="Wishlist" />
+  </EntityType>
+  <EntityType Name="Wishlist">
+    <Key>
+      <PropertyRef Name="Wishlist_Id" />
+    </Key>
+    <Property Name="Wishlist_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Id" Type="Int32" />
+    <Property Name="Prod_Id" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Wishlist__Prod_I__48CFD27E" FromRole="Wishlist" ToRole="Products" />
+    <NavigationProperty Name="User" Relationship="Self.FK__Wishlist__User_I__47DBAE45" FromRole="Wishlist" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK__Cart__Prod_Id__4CA06362">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="Prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cart__User_Id__4BAC3F29">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__Catego__412EB0B6">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Category_Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Prod_id__5070F446">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Prod_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Retail_i__5165187F">
+    <End Role="Retailers" Type="Self.Retailer" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Retailers">
+        <PropertyRef Name="Retail_Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Retail_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__User_id__4F7CD00D">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__Retail__4222D4EF">
+    <End Role="Retailers" Type="Self.Retailer" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Retailers">
+        <PropertyRef Name="Retail_Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Retail_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Update_Pr__Prod___5441852A">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Update_Products" Type="Self.Update_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_Id" />
+      </Principal>
+      <Dependent Role="Update_Products">
+        <PropertyRef Name="Prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Wishlist__Prod_I__48CFD27E">
+    <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Wishlist" Type="Self.Wishlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_Id" />
+      </Principal>
+      <Dependent Role="Wishlist">
+        <PropertyRef Name="Prod_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Wishlist__User_I__47DBAE45">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Wishlist" Type="Self.Wishlist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="Wishlist">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Shopping_AppEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Carts" EntityType="Self.Cart" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Retailers" EntityType="Self.Retailer" />
+    <EntitySet Name="Update_Products" EntityType="Self.Update_Products" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Wishlists" EntityType="Self.Wishlist" />
+    <AssociationSet Name="FK__Cart__Prod_Id__4CA06362" Association="Self.FK__Cart__Prod_Id__4CA06362">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cart__User_Id__4BAC3F29" Association="Self.FK__Cart__User_Id__4BAC3F29">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__Catego__412EB0B6" Association="Self.FK__Products__Catego__412EB0B6">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Prod_id__5070F446" Association="Self.FK__Orders__Prod_id__5070F446">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Retail_i__5165187F" Association="Self.FK__Orders__Retail_i__5165187F">
+      <End Role="Retailers" EntitySet="Retailers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__User_id__4F7CD00D" Association="Self.FK__Orders__User_id__4F7CD00D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__Retail__4222D4EF" Association="Self.FK__Products__Retail__4222D4EF">
+      <End Role="Retailers" EntitySet="Retailers" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Update_Pr__Prod___5441852A" Association="Self.FK__Update_Pr__Prod___5441852A">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Update_Products" EntitySet="Update_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Wishlist__Prod_I__48CFD27E" Association="Self.FK__Wishlist__Prod_I__48CFD27E">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Wishlist" EntitySet="Wishlists" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Wishlist__User_I__47DBAE45" Association="Self.FK__Wishlist__User_I__47DBAE45">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Wishlist" EntitySet="Wishlists" />
+    </AssociationSet>
+    <FunctionImport Name="Retailer_Revenue" ReturnType="Collection(Shopping_AppModel.Retailer_Revenue_Result)">
+      <Parameter Name="Retail_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Retailer_Revenues" ReturnType="Collection(Shopping_AppModel.Retailer_Revenues_Result)">
+      <Parameter Name="Retail_Name" Mode="In" Type="String" />
+    </FunctionImport>
+    <AssociationSet Name="FK__Update_Pr__Retai__73BA3083" Association="Shopping_AppModel.FK__Update_Pr__Retai__73BA3083">
+      <End Role="Retailer" EntitySet="Retailers" />
+      <End Role="Update_Products" EntitySet="Update_Products" />
+    </AssociationSet>
+    <FunctionImport Name="retailer_revdetails" ReturnType="Collection(Shopping_AppModel.retailer_revdetails_Result)">
+      <Parameter Name="retail_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="retailerdetailes" ReturnType="Collection(Shopping_AppModel.retailerdetailes_Result)">
+      <Parameter Name="retail_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Retailer_Revenue_Result">
+    <Property Type="Int32" Name="Retail_id" Nullable="true" />
+    <Property Type="Int32" Name="Prod_id" Nullable="true" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="Prod_Price" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="Prod_Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="29" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="Retailer_Revenues_Result">
+    <Property Type="Int32" Name="Retail_id" Nullable="true" />
+    <Property Type="String" Name="Retail_Name" Nullable="true" MaxLength="40" />
+    <Property Type="Int32" Name="Prod_id" Nullable="true" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="Prod_Price" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="Prod_Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="29" Scale="0" />
+  </ComplexType>
+  <Association Name="FK__Update_Pr__Retai__73BA3083">
+    <End Type="Shopping_AppModel.Retailer" Role="Retailer" Multiplicity="0..1" />
+    <End Type="Shopping_AppModel.Update_Products" Role="Update_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Retailer">
+        <PropertyRef Name="Retail_Id" />
+      </Principal>
+      <Dependent Role="Update_Products">
+        <PropertyRef Name="Retail_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="retailer_revdetails_Result">
+    <Property Type="Int32" Name="Retail_id" Nullable="true" />
+    <Property Type="Int32" Name="Prod_id" Nullable="true" />
+    <Property Type="String" Name="Prod_Name" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="Prod_Price" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="Prod_Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="29" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="retailerdetailes_Result">
+    <Property Type="Int32" Name="Retail_Id" Nullable="false" />
+    <Property Type="String" Name="Company_Name" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Retail_Name" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Retail_Password" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Retail_Phone" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Retail_Email" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Retail_Status" Nullable="true" MaxLength="40" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Final_Shopping_dbModelStoreContainer" CdmEntityContainer="Final_Shopping_dbEntities">
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="Cart_Id" ColumnName="Cart_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compares">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Compare">
+        <MappingFragment StoreEntitySet="Compare">
+          <ScalarProperty Name="Compare_Id" ColumnName="Compare_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Prod_id" ColumnName="Prod_id" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Retail_id" ColumnName="Retail_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retailers">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Retailer">
+        <MappingFragment StoreEntitySet="Retailers">
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Retail_Password" ColumnName="Retail_Password" />
+          <ScalarProperty Name="Retail_Phone" ColumnName="Retail_Phone" />
+          <ScalarProperty Name="Retail_Email" ColumnName="Retail_Email" />
+          <ScalarProperty Name="Retail_Status" ColumnName="Retail_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Update_Products">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Update_Products">
+        <MappingFragment StoreEntitySet="Update_Products">
+          <ScalarProperty Name="Update_Id" ColumnName="Update_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Update_Status" ColumnName="Update_Status" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Email" ColumnName="User_Email" />
+          <ScalarProperty Name="User_Phone" ColumnName="User_Phone" />
+          <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+          <ScalarProperty Name="User_City" ColumnName="User_City" />
+          <ScalarProperty Name="User_Country" ColumnName="User_Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wishlists">
+      <EntityTypeMapping TypeName="Final_Shopping_dbModel.Wishlist">
+        <MappingFragment StoreEntitySet="Wishlist">
+          <ScalarProperty Name="Wishlist_Id" ColumnName="Wishlist_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AddToCompare" FunctionName="Final_Shopping_dbModel.Store.AddToCompare" />
+    <FunctionImportMapping FunctionImportName="GetCart" FunctionName="Final_Shopping_dbModel.Store.GetCart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.GetCart_Result">
+          <ScalarProperty Name="Cart_Id" ColumnName="Cart_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCartItems" FunctionName="Final_Shopping_dbModel.Store.GetCartItems">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.GetCartItems_Result">
+          <ScalarProperty Name="Cart_Id" ColumnName="Cart_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetComparelist" FunctionName="Final_Shopping_dbModel.Store.GetComparelist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.GetComparelist_Result">
+          <ScalarProperty Name="Compare_Id" ColumnName="Compare_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUserDetails" FunctionName="Final_Shopping_dbModel.Store.GetUserDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.GetUserDetails_Result">
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Email" ColumnName="User_Email" />
+          <ScalarProperty Name="User_Phone" ColumnName="User_Phone" />
+          <ScalarProperty Name="User_Address" ColumnName="User_Address" />
+          <ScalarProperty Name="User_City" ColumnName="User_City" />
+          <ScalarProperty Name="User_Country" ColumnName="User_Country" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetWishItem" FunctionName="Final_Shopping_dbModel.Store.GetWishItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.GetWishItem_Result">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetWishlist" FunctionName="Final_Shopping_dbModel.Store.GetWishlist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.GetWishlist_Result">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Wishlist_Id" ColumnName="Wishlist_Id" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="retailer_revdetails" FunctionName="Final_Shopping_dbModel.Store.retailer_revdetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.retailer_revdetails_Result">
+          <ScalarProperty Name="Retail_id" ColumnName="Retail_id" />
+          <ScalarProperty Name="Prod_id" ColumnName="Prod_id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetAllCategoryfromdb" FunctionName="Final_Shopping_dbModel.Store.sp_GetAllCategoryfromdb">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_GetAllCategoryfromdb_Result">
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetAllPdtfromdb" FunctionName="Final_Shopping_dbModel.Store.sp_GetAllPdtfromdb">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_GetAllPdtfromdb_Result">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="row_num" ColumnName="row_num" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetOnePdtfromdb" FunctionName="Final_Shopping_dbModel.Store.sp_GetOnePdtfromdb">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_GetOnePdtfromdb_Result">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="row_num" ColumnName="row_num" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getOrders" FunctionName="Final_Shopping_dbModel.Store.sp_getOrders">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_getOrders_Result">
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getOrdersfromCart" FunctionName="Final_Shopping_dbModel.Store.sp_getOrdersfromCart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_getOrdersfromCart_Result">
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Cart_Id" ColumnName="Cart_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Pdts_Of_One_Category" FunctionName="Final_Shopping_dbModel.Store.sp_Pdts_Of_One_Category">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_Pdts_Of_One_Category_Result">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="row_num" ColumnName="row_num" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PdtsOfOneCategoryfromdb" FunctionName="Final_Shopping_dbModel.Store.sp_PdtsOfOneCategoryfromdb">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Final_Shopping_dbModel.sp_PdtsOfOneCategoryfromdb_Result">
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="Prod_Name" ColumnName="Prod_Name" />
+          <ScalarProperty Name="Prod_Image" ColumnName="Prod_Image" />
+          <ScalarProperty Name="Prod_Price" ColumnName="Prod_Price" />
+          <ScalarProperty Name="Prod_Description" ColumnName="Prod_Description" />
+          <ScalarProperty Name="Prod_Quantity" ColumnName="Prod_Quantity" />
+          <ScalarProperty Name="Prod_Status" ColumnName="Prod_Status" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="Retail_Id" ColumnName="Retail_Id" />
+          <ScalarProperty Name="Retail_Name" ColumnName="Retail_Name" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="row_num" ColumnName="row_num" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
