@@ -1,0 +1,15 @@
+update  Products set Prod_Image ='https://i.ibb.co/9VXKZ5M/specs-3.jpg' where Prod_Id=101
+update  Products set Prod_Image ='https://i.ibb.co/qCcvJ5p/specs-4.jpg' where Prod_Id=102
+update  Products set Prod_Image ='https://i.ibb.co/Mhrww2g/specs-7.jpg' where Prod_Id=103
+update  Products set Prod_Image ='https://i.ibb.co/tKqC9d8/specs-12.jpg' where Prod_Id=104
+update  Products set Prod_Image ='https://i.ibb.co/Chm27TJ/Square-Pic-20201229-16160623.jpg' where Prod_Id=105
+update  Products set Prod_Image ='https://i.ibb.co/091cZXZ/Square-Pic-20201229-16162658.jpg' where Prod_Id=106
+update  Products set Prod_Image ='https://i.ibb.co/hH0Wx98/Square-Pic-20201229-16164092.jpg' where Prod_Id=107
+update  Products set Prod_Image ='https://i.ibb.co/MNQ0MS1/Square-Pic-20201229-16172674.jpg' where Prod_Id=108
+update  Products set Prod_Image ='https://i.ibb.co/dM2x2Sp/Square-Pic-20201229-16173575.jpg' where Prod_Id=109
+update  Products set Prod_Image ='https://i.ibb.co/gSmzRdn/Square-Pic-20201229-16174715.jpg' where Prod_Id=110
+update  Products set Prod_Image ='https://i.ibb.co/N3jymVt/Square-Pic-20201229-16182076.jpg' where Prod_Id=111
+update  Products set Prod_Image ='https://i.ibb.co/5Y5z2zS/Square-Pic-20201229-16185698.jpg' where Prod_Id=112
+update  Products set Prod_Image ='https://i.ibb.co/ngFJV3w/Square-Pic-20201229-16192010.jpg' where Prod_Id=113
+update  Products set Prod_Image ='https://i.ibb.co/Hx7Cszc/Square-Pic-20201229-16193140.jpg' where Prod_Id=114
+update  Products set Prod_Image ='https://i.ibb.co/dpPyp8r/Square-Pic-20201229-16194077.jpg' where Prod_Id=115

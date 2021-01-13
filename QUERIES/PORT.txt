@@ -1,0 +1,9 @@
+--USER
+ http://localhost:4200/
+
+---RETAILER
+ http://localhost:4300/
+
+---ADMIN
+ http://localhost:4400/
+
