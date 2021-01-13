@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files
+/* @import '~bootstrap/dist/css/bootstrap.css'; */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap'); */
+
+  * {
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+body {
+	background: #f4f5f9;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+	padding: 0rem 3.5rem;
+	color: #6a6b6d;
+}
+
+header h2 {
+	font-size: 1.8rem;
+}
+
+header h2 span {
+	margin-left: 1rem;
+}
+
+header h2 {
+	width: 20%;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.main-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
+.menu-responsive {
+	display: inline-block;
+	width: 70%;
+}
+
+.menu-responsive label {
+	display: none;
+	text-align: right;
+	margin-bottom: 1rem;
+	font-weight: 700;
+}
+
+form.search {
+	width: 100%;
+	background: #fff;
+}
+
+form.search input, form.search button {
+	height: 46px;
+	outline: none;
+	background: none;
+	border: none;
+}
+
+form.search input {
+	width: 90%;
+	padding: 0rem 1rem;
+}
+
+form.search button {
+	width: 9%;
+}
+
+header a {
+	color: #6a6b6d;
+	font-weight: 600;
+}
+
+

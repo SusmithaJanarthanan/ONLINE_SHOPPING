@@ -1,0 +1,31 @@
+
+<h1 style="text-align:center">Category Details</h1>
+<br>
+<br>
+
+<h2 style="text-align:center">
+    <a routerLink="/addCategory" >Add a new Category</a>
+    </h2>
+<br>
+
+<button class="btn btn-primary" (click)="goBack()">Go back to Home</button>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>Category id</th>
+            <th>Category Name</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let cat of categories">
+            <td>{{cat.Category_Id}}</td>
+            <td>{{cat.Category_Name}}</td>
+            <td><a class="btn btn-sm text-white btn-danger" (click)="DeleteCategory(cat.Category_Id)">Delete</a></td>
+        </tr>
+    </tbody>
+
+
+</table>

@@ -1,0 +1,78 @@
+<div class="head">
+  <h3 style="text-align: center;">Go Shoppy</h3>
+  </div>
+<div class="header">
+  <br>
+  <br>
+<form #loginForm="ngForm" (ngSubmit)="Add()" >
+  <div class="form-group">
+      <label for="Company_Name">Enter Company Name</label>
+      <input type="text" name="Company_Name" id="Company_Name" class="form-control" required
+      [(ngModel)]="retailer.Company_Name" #name="ngModel">
+      <div style="color: azure;background-color: black;"   [hidden]= "name.valid || name.untouched"
+           class="alert alert-danger">
+        Company Name is required
+      </div>
+    </div>
+  <div class="form-group">
+      <label for="password">Enter Username</label>
+      <input type="text" name="password" id="password" class="form-control" required
+      [(ngModel)]="retailer.Retail_Name" #password="ngModel">
+      <div  style="color: azure;background-color: black;"[hidden]="password.valid || password.untouched"
+          class="alert alert-danger">
+      Retailer Name is required
+      </div>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" class="form-control" required
+    [(ngModel)]="retailer.Retail_Password" #password="ngModel">
+    <div  style="color: azure;background-color: black;"[hidden]="password.valid || password.untouched"
+        class="alert alert-danger">
+    Password is required
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input type="password" name="password2" id="password2" class="form-control" required
+    [(ngModel)]="dummy.retype" #password2="ngModel" >
+    <div  style="color: azure;background-color: black;" [hidden]="password2.valid || password2.untouched"
+        class="alert alert-danger">
+    Confirm Password is required
+    </div>
+    <div *ngIf="password2.dirty && comparepass(password,password2) " class="alert alert-danger">Doesn't match</div>
+</div>
+
+
+    <div class="form-group">
+      <label for="phone">Enter mobile number</label>
+      <input type="number"   max="10" name="phone" id="phone" class="form-control" required
+      [(ngModel)]="retailer.Retail_Phone" #phone="ngModel" pattern="[7-9]{1}[0-9]{9}">
+      <div  style="color: azure;background-color: black;" [hidden]="phone.valid ||phone.untouched"
+          class="alert alert-danger">
+      Mobile Number is required
+      </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Enter email-id</label>
+        <input type="email" name="Email" id="Email" class="form-control" required
+        [(ngModel)]="retailer.Retail_Email" #Email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" >
+        <div  style="color: azure;background-color: black;" [hidden]="Email.valid || Email.untouched"
+            class="alert alert-danger">
+        Email is required
+        </div>
+        </div>
+  <button type="submit" class="btn btn-success" [disabled]="!loginForm.form.valid">  Submit  </button>
+
+
+<div *ngIf="msg"   class="alert alert-danger">
+  {{msg}}
+</div>
+</form>
+</div>
+
+

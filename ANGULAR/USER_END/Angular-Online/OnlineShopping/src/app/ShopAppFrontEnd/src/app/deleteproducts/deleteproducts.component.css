@@ -1,0 +1,23 @@
+.header{
+     
+    background: url('https://i.ibb.co/x5LhTkt/BAck-ground.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px; 
+  
+   
+position: absolute;
+  top: 15%;
+  left: 0;
+
+
+width: 100%;
+  height: auto;
+   
+}
+th,td{
+  text-align: center;
+}

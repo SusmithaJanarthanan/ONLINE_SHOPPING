@@ -1,0 +1,109 @@
+
+<div id="viewport">
+    <!-- Sidebar -->
+<div id="sidebar">
+  <ul class="nav">
+    <div class="nav1">
+      <div class="data-nav" style="padding-left: 15px;padding-top: 10px;">
+          <label  class="nav1"> Sort</label>
+          <br>
+          <select [(ngModel)]='SortbyParam' >
+            <!-- <option hidden value="" disabled selected>Select one category </option> -->
+            <option value="Prod_Name" >Sort By Name</option>
+            <br>
+            <option value="Prod_Price">Sort By Price</option>
+          </select>
+      </div>
+      <div class="data-nav" style="padding-left: 15px;padding-top: 10px;">
+          <select [(ngModel)]='SortOrder' >
+            <option value="asc" >Sort Ascending</option>
+            <br>
+            <option value="desc">Sort Descending</option>
+          </select>
+         <br>
+         <br>
+          <button class="btn btn-primary" (click)='onclear()'>Clear</button>
+      </div>
+      <div style="padding-left: 15px;padding-top: 10px;">
+        <label  class="nav1"> Filter</label>
+        <p>
+        Minimum Price
+        <input type="number" [(ngModel)]="Min" />
+        </p>
+        <p>
+          Maximum Price
+        <input type="number" [(ngModel)]="Max" />
+        </p>
+        <button class="btn btn-primary" (click)="FilterByPrice()">  Submit</button>&nbsp;
+        <button class="btn btn-primary" (click)="FilterByPriceClear()">Clear</button>
+        </div>
+    </div>
+
+      </ul>
+    </div>
+<br>
+    <div class="search1">
+      <input class="search" type="search" [(ngModel)]="Name" placeholder="search store" />&nbsp;
+      <button class="search2" (click)="OnSearch()"><span class="span ti-search"></span></button>&nbsp;
+      <button class="btn btn-primary" (click)="OnClear()">Clear</button>
+     </div>
+
+    <!-- Content -->
+<div *ngIf="products">
+   <div class="container">
+    <h3 class="h3"> </h3>
+    <div class="row">
+        <br>
+      <!-- <div *ngIf="( products | paginate: { itemsPerPage: 6, currentPage: p })as result" > -->
+      <div class="id" *ngIf="( products| filter:[min,max]|search:name|sort:[SortbyParam,SortOrder]| paginate: { itemsPerPage: 6, currentPage: p })as result">
+
+        <div class="col-md-4 col-sm-6" *ngFor="let item of result">
+              <div class="product-grid2" [ngClass]="{imgClass:(item.Prod_Status==='pending'||item.Prod_Quantity<=0||item.Prod_Status==='Deleted' )}" >
+              <div class="product-image2">
+                  <a [ngClass]="{imgClass:(item.Prod_Status==='pending'||item.Prod_Quantity<=0||item.Prod_Status==='Deleted' )}"  role="button" (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')?'':showDetails(item.Prod_Id)" >
+                      <img class="pic-1" src="{{item.Prod_Image}}" style="height:270px;" >
+                      <img class="pic-2" src="{{item.Prod_Image}}" style="height:270px;">
+
+                  </a>
+
+                  <ul class="social">
+                    <li><a  [ngClass]="{imgClass:(item.Prod_Status==='pending'||item.Prod_Quantity<=0||item.Prod_Status==='Deleted'  )}" role="button"  (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')?'':addToCompare(item)"  data-tip="Add to Compare"><i class="fa fa-exchange"></i></a></li>
+                      <li><a  [ngClass]="{imgClass:(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')}"  (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0||item.Prod_Status==='Deleted' )?'':addToWishlist(item.Prod_Id)" data-tip="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                      <!-- <li><a  [ngClass]="{imgClass:(item.Prod_Status==='pending'||item.Prod_Quantity<=0 )}"  [routerLink]="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 )? [] : ['/Home']"  data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li> -->
+
+                    </ul>
+
+                  <a [ngClass]="{imgClass:(item.Prod_Status==='pending'||item.Prod_Quantity<=0||item.Prod_Status==='Deleted' )}"  class="add-to-cart"  (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')?'':addToCart(item)" >{{item.Prod_Status==='pending'||item.Prod_Quantity<=0||item.Prod_Status==='Deleted'?"Currently Not Available":"Add to cart"}}</a>
+                </div>
+
+                <div class="product-content">
+                    <h3 class="title">{{item.Prod_Name}}</h3>
+                    <span class="price">Rs {{item.Prod_Price}}</span>
+                    <br>
+
+
+                    <span class="price">{{item.Company_Name}}</span>
+                    <br>
+                    <!--  (click)="item.Prod_Status==='pending'?'void':'showDetails(item.Prod_Id)'"-->
+            </div>
+
+        </div>
+        </div>
+        <div *ngIf="result.length === 0">
+          <div class="error-404" style="margin-left:250px">
+            <div class="error-code m-b-10 m-t-20"> <i class="fa fa-warning"></i></div>
+            <h2 class="font-bold">Oops!No Products Found</h2>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <!-- </div> -->
+      </div>
+      <div class="container" style="margin-left:250px ;">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </div>
+
+

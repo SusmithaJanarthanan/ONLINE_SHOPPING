@@ -1,0 +1,52 @@
+
+<div style="background-color:#e6f0f5;margin-top: 20px;" class="container">
+  <div *ngIf='order.length===0' else elseBlock>
+  <p>No Orders</p>
+  </div>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-lg-4 pb-5">
+        <!-- Wishlist-->
+        <div class="col-lg-8 pb-5">
+            <!-- Item-->
+            <div class="cart-item d-md-flex justify-content-between" #elseBlock *ngFor="let item of order">
+                <div class="px-3 my-3">
+                    <a class="cart-item-product">
+                        <div class="cart-item-product-thumb"><img  src="{{item.Prod_Image}}"b style="width:70px;height:100px" alt="Product"></div>
+                        <div class="cart-item-product-info">
+                            <h4 class="cart-item-product-title">{{item.Prod_Name}}</h4>
+                            <div class="text-lg text-body font-weight-medium pb-1">Rs. {{item.Prod_Price}}</div><span>Quantity <span class="text-success font-weight-medium">{{item.Prod_Quantity}}</span></span>
+                            <div>Total Amount Paid <span class="text-success font-weight-medium"> {{item.Prod_Quantity*item.Prod_Price*1.05}}</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    <!-- <div #elseBlock *ngFor="let item of order">
+        <div class="row" style="width: 500px;">
+            <div style="margin-top: 20px;margin-left: 30px; width: 300px;font-style: oblique;display: inline-block;">
+            <img src="{{item.Prod_Image}}" style="width:50px;height:50px">
+            <div style="display: inline">
+              <br>
+              <!-- Order Id:{{item.Order_Id}} -->
+              <!-- Product Name:{{item.Prod_Name}}
+              <br>
+              Product Price:{{item.Prod_Price}}
+              <br>
+              Quantity:{{item.Prod_Quantity}}
+              </div>
+            </div>
+        </div>
+    </div>
+</div> -->

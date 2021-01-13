@@ -1,0 +1,222 @@
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.dll.config
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.pdb
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.exe
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.exe.config
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.rsp
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.exe
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.exe.config
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.rsp
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Managed.Core.targets
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.AppContext.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Collections.Immutable.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Console.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Globalization.Calendars.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.Compression.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.FileSystem.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Net.Http.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Net.Sockets.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Reflection.Metadata.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.ValueTuple.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XmlDocument.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XPath.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.exe
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.exe.config
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.rsp
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\VBCSCompiler.exe
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\VBCSCompiler.exe.config
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.SqlServer.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Newtonsoft.Json.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Net.Http.Formatting.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.WebHost.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.SqlServer.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Newtonsoft.Json.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Net.Http.Formatting.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.WebHost.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csprojAssemblyReference.cache
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csproj.CoreCompileInputs.cache
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csproj.CopyComplete
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.pdb
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Cors.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.Cors.dll
+D:\LTI\MINI_PJT\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.Cors.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csprojAssemblyReference.cache
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csproj.CoreCompileInputs.cache
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.pdb
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.dll.config
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.pdb
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.exe
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.exe.config
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.rsp
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.exe
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.exe.config
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.rsp
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Managed.Core.targets
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.AppContext.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Collections.Immutable.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Console.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Globalization.Calendars.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.Compression.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.FileSystem.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Net.Http.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Net.Sockets.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Reflection.Metadata.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.ValueTuple.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XmlDocument.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XPath.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.exe
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.exe.config
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.rsp
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\VBCSCompiler.exe
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\VBCSCompiler.exe.config
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.SqlServer.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Newtonsoft.Json.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Net.Http.Formatting.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Cors.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.Cors.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.WebHost.dll
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.SqlServer.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.Cors.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Newtonsoft.Json.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Net.Http.Formatting.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.WebHost.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LTI\MINI_PJT\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csproj.CopyComplete
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csprojAssemblyReference.cache
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csproj.CoreCompileInputs.cache
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.pdb
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.dll.config
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Mini_Pjt_Shopping.pdb
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.exe
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.exe.config
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csc.rsp
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.exe
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.exe.config
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\csi.rsp
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Managed.Core.targets
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.AppContext.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Collections.Immutable.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Console.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Globalization.Calendars.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.Compression.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.FileSystem.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Net.Http.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Net.Sockets.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Reflection.Metadata.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.ValueTuple.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XmlDocument.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XPath.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.exe
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.exe.config
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\vbc.rsp
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\VBCSCompiler.exe
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\roslyn\VBCSCompiler.exe.config
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.SqlServer.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Newtonsoft.Json.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Net.Http.Formatting.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Cors.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.Cors.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.WebHost.dll
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\EntityFramework.SqlServer.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.Cors.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Newtonsoft.Json.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Net.Http.Formatting.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\System.Web.Http.WebHost.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LTI\New folder (2)\USER_END\Mini_Pjt_Shopping_Solution\Mini_Pjt_Shopping\obj\Debug\Mini_Pjt_Shopping.csproj.CopyComplete

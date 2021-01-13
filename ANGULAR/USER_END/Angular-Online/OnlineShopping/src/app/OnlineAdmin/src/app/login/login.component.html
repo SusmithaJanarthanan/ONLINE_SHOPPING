@@ -1,0 +1,16 @@
+<h1 style="text-align:center">Login</h1><br>
+<br>
+
+
+<form class="container"  >
+    <div class="container">   
+        <label>Admin name : </label>   
+        <input type="text" class="form-group" placeholder="Enter Username" name="admin_name" required [(ngModel)]="name">  
+
+        <label>Password : </label>   
+        <input type="password"class="form-group" placeholder="Enter Password" name="password" required [(ngModel)]="password">
+
+        <button type="submit" (click)="adminLogin()">Login</button>   
+        
+    </div>   
+</form>

@@ -1,0 +1,44 @@
+<p>edit-new-request works!</p>
+
+
+<div>
+    <h1 class="text-center">Edit and update retailer</h1>
+</div>
+
+<form [formGroup]="editNewRequest" (ngSubmit)="updateNewProduct()">
+
+
+     <div class="form-group">
+         <label>Product Name</label>
+         <input type="text" class="form-control" placeholder="Product name" formControlName="Prod_Name">
+     </div>
+
+
+    
+    <div class="form-group">
+        <label>Prod Quantity</label>
+        <input type="number" class="form-control" placeholder="Product Quantity" formControlName="Prod_Quantity">
+    </div>
+
+
+
+    <div class="form-group">
+        <label>Prod Price</label>
+        <input type="number" class="form-control" placeholder="Product Price" formControlName="Prod_Price">
+    </div>
+
+    
+
+    <div class="form-group">
+        <label>Update Status</label>
+        <select class="form-control" placeholder="Update Status" formControlName="Update_Status">
+            <option value="approved">approve</option>
+            <option value="deleted">delete</option>
+            <option value="pending">pending</option></select>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">update</button>
+    
+
+</form>

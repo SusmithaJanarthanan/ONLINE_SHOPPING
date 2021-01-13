@@ -1,0 +1,185 @@
+
+@media only screen and (max-width: 980px) {
+	.brand-logo {
+		display: none;
+	}
+
+	#menu-toggle:checked ~ .main-menu:before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 500;
+		background: rgba(0,0,0,0.6);
+	}
+
+	#menu-toggle:checked ~ .main-menu .menu-responsive {
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 600;
+	}
+
+	#menu-toggle:checked ~ .main-menu .menu-responsive label {
+		display: block;
+	}
+
+	.menu-responsive {
+		position: absolute;
+		top: -100%;
+	}
+
+	.main-menu {
+		justify-content: flex-end;
+	}
+
+	.main-menu a {
+		margin-left: 1rem;
+	}
+
+	.carousel {
+		height: auto;
+	}
+
+	.carousel-item {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.carousel-info {
+		width: 100%;
+	}
+
+	.carousel-image {
+		display: none;
+	}
+
+	.single-item {
+		width: 30%;
+	}
+
+	.deals-carousel .single-item {
+		width: 50% !important;
+	}
+
+	.deals-inner {
+		display: block;
+	}
+
+	.timer {
+		margin-bottom: 1rem;
+	}
+
+	footer {
+		display: block;
+	}
+
+	.footer-menu {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+/*
+========================================= */
+
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+
+
+h1 {
+  text-align: center;
+  margin: 1.5em;
+}
+.imgs{
+  width: 35%;
+  border-radius: 50%;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  background: #fff;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .items {
+    animation: carouselAnim 35s infinite alternate linear;
+  }
+
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (2 * 300px)));
+    }
+  }
+}
+
+.entry p {
+  text-align: center;
+  padding: 1em;
+}
+
+.name {
+  font-weight: bold;
+}
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+
+.container .faders {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.faders .right,
+.faders .left {
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

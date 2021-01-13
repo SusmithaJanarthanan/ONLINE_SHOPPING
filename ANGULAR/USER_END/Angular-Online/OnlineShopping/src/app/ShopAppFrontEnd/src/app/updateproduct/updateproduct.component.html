@@ -1,0 +1,45 @@
+<app-nameheader></app-nameheader>
+<div class="header">
+<br>
+<br>
+<form #addproductForm="ngForm" (ngSubmit)="onSubmit()" >
+
+  <div class="form-group">
+     <label for="cat">Select Product Id</label><br>
+     <select name="prodid" id="prodid" class="form-control" required  style="height: 30px;"
+     [(ngModel)]="updateproduct.Prod_Id"  #prodid="ngModel">
+     <option *ngFor="let c of retproducts" [ngValue]="c.Prod_Id" >{{c.Prod_Name}}-{{c.Prod_Id}}</option>
+     </select>
+     <div style="color: azure;background-color: black;" [hidden]="prodid.valid || prodid.untouched"
+           class="alert alert-danger">
+        Product Id is required
+     </div>
+  </div>
+
+
+ <div class="form-group">
+  <label>Enter Product Price</label><br>
+  <input type="number" [(ngModel)]="updateproduct.Prod_Price" oninput="if(value<=0) value=''" required class="form-control" #ProdPrice="ngModel" name="ProdPrice" >
+  <div  style="color: azure;background-color: black;" [hidden]="ProdPrice.valid || ProdPrice.untouched"
+     class="alert alert-danger">
+  Product Price is required
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Enter Product Quantity</label>
+  <input type="number" [(ngModel)]="updateproduct.Prod_Quantity"   min="1" oninput="validity.valid||(value='')" required class="form-control" #ProdQuan="ngModel"  name="ProdQuan">
+  <div style="color: azure;background-color: black;" [hidden]="ProdQuan.valid || ProdQuan.untouched"
+  class="alert alert-danger">
+  Product Quantity is required
+  </div>
+</div>
+
+  <button type="submit" class="btn btn-success" [disabled]="!addproductForm.form.valid">  AddProduct  </button>
+
+
+<div *ngIf="msg">
+  {{msg}}
+</div>
+</form>
+</div>

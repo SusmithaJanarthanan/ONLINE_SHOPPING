@@ -1,0 +1,14 @@
+.linki:hover
+{
+background-color:rgb(153, 193, 216);
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 40px;
+padding-right:40px;
+
+}
+
+.linki{
+padding-left: 40px;
+padding-right:40px;
+}

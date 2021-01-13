@@ -1,0 +1,56 @@
+<h3>Home</h3>
+<br>
+
+
+<div class="alert alert-success">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          
+        </div>
+        <ul class="nav navbar-nav">
+          <!-- <li><a routerLink="/users">Manage Users</a></li> -->
+          <li><button (click)="goToProducts()" class="btn btn-success">View Products</button></li><br>
+          <li><button (click)="goToRetailers()" class="btn btn-success">View Retailers</button></li><br>
+          <li><button (click)="goToCategories()" class="btn btn-success">View Categories</button></li><br>
+          <li><button (click)="goToRequests()" class="btn btn-success">View new Products requests</button></li><br>
+          <li><button (click)="goToOrders()" class="btn btn-success">View Orders</button></li><br>
+          <li><button (click)="logout()" class="btn btn-danger">Log out</button></li>
+          <!-- <li><a routerLink="products" >Manage Products</a></li>
+          <li><a routerLink="retails" >Manage Retailers</a></li>
+          <li><a routerLink="newProd">View new Requests</a></li>
+          <li><a routerLink="category">Manage categories</a></li> -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+<h1 style="text-align:center">User Details</h1>
+<br>
+<br>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>User id</th>
+            <th>User Name</th>
+            <th>User Password</th>
+            <th>User mail</th>
+            <th>User phone</th>
+            <th>User address</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.User_Id}}</td>
+            <td>{{user.User_Name}}</td>
+            <td>{{user.User_Password}}</td>
+            <td>{{user.User_Email}}</td>
+            <td>{{user.User_Phone}}</td>
+            <td>{{user.User_Address}}</td>
+        </tr>
+    </tbody>
+
+    
+</table>

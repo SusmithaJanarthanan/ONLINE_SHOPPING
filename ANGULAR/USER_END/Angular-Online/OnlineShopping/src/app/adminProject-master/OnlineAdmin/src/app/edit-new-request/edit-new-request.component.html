@@ -1,0 +1,25 @@
+
+
+
+<div>
+    <h1 class="text-center">Edit and update retailer</h1>
+</div>
+
+<form [formGroup]="editNewRequest" (ngSubmit)="updateNewProduct()">
+
+
+
+    <div class="form-group">
+        <label>Update Status</label>
+        <select class="form-control" placeholder="Update Status" formControlName="Update_Status">
+            <option value="approve">approve</option>
+            <option value="delete">delete</option>
+            <option value="pending">pending</option></select>
+
+    </div>
+
+    <button type="submit" class="btn btn-success">update</button>
+    <button class="btn btn-primary" (click)="goBack()" >Cancel</button>
+
+
+</form>

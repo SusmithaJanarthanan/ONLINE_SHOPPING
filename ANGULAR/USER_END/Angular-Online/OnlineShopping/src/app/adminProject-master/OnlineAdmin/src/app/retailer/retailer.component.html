@@ -1,0 +1,48 @@
+<h1 style="text-align:center">Retailer Details</h1>
+<br>
+<br>
+
+
+
+<button class="btn btn-primary" (click)="goBack()" >Go back to Home</button>
+<br>
+
+<h2 style="text-align:center">
+    <a routerLink="/addRetailer" >Add a new retailer</a>
+    </h2>
+
+    <br>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>Retail id</th>
+            <th>Company name</th>
+            <th>Retail Name</th>
+            <th>Retail Password</th>
+            <th>Retail Phone</th>
+            <th>Retail Email</th>
+             <th>Retail status</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let ret of retailers">
+            <td>{{ret.Retail_Id}}</td>
+            <td>{{ret.Company_Name}}</td>
+            <td>{{ret.Retail_Name}}</td>
+            <td>{{ret.Retail_Password}}</td>
+            
+            <td>{{ret.Retail_Phone}}</td>
+            <td>{{ret.Retail_Email}}</td>
+            <td>{{ret.Retail_Status}}</td>
+            
+            <td><a class="btn btn-sm text-white btn-danger" (click)="DeleteRetailer(ret.Retail_Id)">Delete</a></td>
+            <td><a class="btn btn-sm text-white btn-danger" (click)=" getRevenue(ret.Retail_Id)">Total revenue</a></td>
+            <td><a routerLink="/update/{{ret.Retail_Id}}">update</a></td>
+        </tr>
+    </tbody>
+
+    
+</table>

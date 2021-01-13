@@ -1,0 +1,22 @@
+<app-nameheader></app-nameheader>
+<div class="header">
+<br>
+<br>
+<br>
+<table  class="table table-striped">
+    <tr *ngIf="retailerproducts">
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th> Status</th>
+
+</tr>
+<tr *ngFor="let p of retailerproducts">
+        <td>{{p.Prod_Id}}</td>
+        <td> {{p.Prod_Name}} </td>
+        <td>{{p.Prod_Status}}</td>
+        <button  class="btn btn-danger" (click)="DeleteProduct(p.Prod_Id)">  Delete Product  </button>
+
+</tr>
+</table>
+</div>
+

@@ -1,0 +1,62 @@
+
+<div>
+    <h1 class="text-center">Edit and update product</h1>
+</div>
+
+<form [formGroup]="editProduct" (ngSubmit)="updateProduct()">
+     
+    
+    <!-- <div class="form-group">
+         <label>Category Id</label>
+         <input type="number" class="form-control" placeholder="Category Id" formControlName="Category_Id">
+     </div> -->
+
+
+
+     <!-- <div class="form-group">
+        <label>Prod Name</label>
+        <input type="text" class="form-control" placeholder="Product name" formControlName="Prod_Name">
+    </div> -->
+
+
+
+    <div class="form-group">
+        <label>Prod Price</label>
+        <input type="number" class="form-control" placeholder="Product price" formControlName="Prod_Price">
+    </div>
+
+
+
+    <div class="form-group">
+        <label>Prod Description</label>
+        <input type="text" class="form-control" placeholder="Product Description" formControlName="Prod_Description">
+    </div>
+
+
+    
+    <div class="form-group">
+        <label>Prod Quantity</label>
+        <input type="number" class="form-control" placeholder="Product Quantity" formControlName="Prod_Quantity">
+    </div>
+
+
+    <!-- <div class="form-group">
+        <label>Retail Id</label>
+        <input type="number" class="form-control" placeholder="Retail_Id" formControlName="Retail_Id">
+    </div> -->
+
+
+
+    <div class="form-group">
+        <label>Prod Status</label>
+        <!-- <input type="text" class="form-control" placeholder="Product Status" formControlName="Prod_Status"> -->
+        <select class="form-control" placeholder="Product Status" formControlName="Prod_Status">
+            <option value="approved">approve</option>
+            <option value="pending">pending</option></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">update</button>
+    
+
+</form>
+

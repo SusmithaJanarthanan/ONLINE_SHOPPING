@@ -1,0 +1,47 @@
+<app-nameheader></app-nameheader>
+<div class="header">
+   
+<h2 style="text-align: center;"><b>Retailer Personal Details</b> </h2>
+
+<div  class="details" *ngIf="retailerpersonal">
+    <p><span >Retailer Id  </span> :{{retailerpersonal.Retail_Id}}<br>
+        <span>  Name   </span>      :{{retailerpersonal.Retail_Name}}<br>
+       <span>Company Name </span>   :{{retailerpersonal.Company_Name}}<br>
+        <span>   Phone Number </span> :{{retailerpersonal.Retail_Phone}}<br>
+         <span>  Email </span>      :{{retailerpersonal.Retail_Email}}
+  
+      </p>    
+</div>
+<br>
+<br>
+
+<div>
+<table  class="table table-striped">
+    <tr *ngIf="retailerdetails">     
+    <th>Prod Id</th> 
+    <th>Prod Name</th>
+    <th> Price</th>
+    <th>Quantity</th>
+    <th>Total</th>
+    
+</tr>
+<tr *ngFor="let a of retailerdetails">
+           
+        <td>{{a.Prod_id}}</td>       
+        <td>{{a.Prod_Name}}</td>               
+        <td>{{a.Prod_Price}}</td>       
+        <td>{{a. Prod_Quantity }}</td>
+        <td>{{a.Total}}</td>        
+</tr>
+</table>
+</div>
+<br>
+<div *ngIf="retailerdetails">
+<button  class="btn btn-primary total"  (click)="getRetailerAmount()" >GetTotal</button>
+<br>
+<h2 *ngIf="amount" style="text-align:center;">Total Amount :{{amount}}</h2>
+</div>
+<div *ngIf="msg" class="btn-danger">
+    {{msg}}
+</div>
+</div>

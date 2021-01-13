@@ -1,0 +1,25 @@
+
+<div class="header">
+<br>
+<h1 style="text-align:center;color: #ffffff;">Login As Admin</h1><br>
+<br>
+
+
+<form class="container" style="border-style:solid; width: fit-content;color: #ffffff;" >
+    <div class="container" >
+        <label style="color: #ffffff;">Admin name : </label>
+        <input type="text" class="form-group" placeholder="Enter Username" name="admin_name" required [(ngModel)]="name">
+        <br>
+        <br>
+
+        <label style="color: #ffffff;">Password : </label>
+        <input type="password"class="form-group" placeholder="Enter Password" name="password" required [(ngModel)]="password">
+        <br>
+        <br>
+
+        <button type="submit" (click)="adminLogin()" class="btn btn-success" >Login</button>
+
+    </div>
+</form>
+</div>
+

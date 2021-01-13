@@ -1,0 +1,91 @@
+<app-nameheader></app-nameheader>
+<div class="header">
+<br>
+<br>
+
+    
+<form #addproductForm="ngForm" (ngSubmit)="onSubmit()" >
+
+   <div class="form-group">
+      <label for="cat">Select Category</label><br>
+      <select name="category" id="category" class="form-control" required  style="height: 30px;"
+      [(ngModel)]="product.Category_Id"  #category="ngModel"> 
+         <option *ngFor="let c of catlist" [ngValue]="c.Category_Id" >{{c.Category_Name}}</option>
+      </select>
+      <div style="color: azure;background-color: black;" [hidden]="category.valid || category.untouched" 
+            class="alert alert-danger">
+         Category is required
+      </div>
+   </div>
+ 
+   <div class="form-group">
+      <label>Enter Product Name</label><br>
+      <input type="text" [(ngModel)]="product.Prod_Name" required class="form-control" #ProdName="ngModel" name="ProdName">
+      <div  style="color: azure;background-color: black;" [hidden]="ProdName.valid || ProdName.untouched"
+         class="alert alert-danger">
+      Product Name is required
+      </div>
+   </div>
+
+   <div class="form-group">
+      <label>Enter Product Price(Value should be greater than 0)</label><br>
+      <input type="number" [(ngModel)]="product.Prod_Price"  min="1"  oninput="if(value<=0) value=''" required class="form-control" #ProdPrice="ngModel" name="ProdPrice" >
+      <div  style="color: azure;background-color: black;" [hidden]="ProdPrice.valid || ProdPrice.untouched"
+         class="alert alert-danger">
+      Product Price is required
+      </div>
+   </div>
+
+   <!-- <div class="form-group">
+      <label>Add Product Image</label><br>
+      <input type="text" [(ngModel)]="product.Prod_Image"  required  class="form-control" #ProdImg="ngModel" name="ProdImg"> 
+      <div  style="color: azure;background-color: black;" [hidden]="ProdImg.valid || ProdImg.untouched"
+      class="alert alert-danger">
+      Product Image is required
+      </div>
+   </div> -->
+   <div class="form-group">
+      <label>Add Product Image</label><br>
+
+      <input #ProdImg="ngModel"  name="ProdImg"  required  class="form-control"
+      type="file" (change)="handleFileInput($event.target.files)"
+       [(ngModel)]="product.Prod_Image"/> 
+      <div  style="color: azure;background-color: black;"
+       [hidden]="ProdImg.valid || ProdImg.untouched"
+      class="alert alert-danger">
+      Product Image is required
+      </div>
+   </div>
+
+   <div class="form-group">
+      <label>Enter Product Description</label><br>
+      <input type="text" [(ngModel)]="product.Prod_Description"  required class="form-control" #ProdDes="ngModel" name="ProdDes">
+      <div  style="color: azure;background-color: black;" [hidden]="ProdDes.valid || ProdDes.untouched"
+      class="alert alert-danger">
+      Product Description is required
+      </div>
+   </div>
+
+   <div class="form-group">
+      <label>Enter Product Quantity</label>
+      <input type="number" [(ngModel)]="product.Prod_Quantity"   min="1" oninput="validity.valid||(value='')" required class="form-control" #ProdQuan="ngModel"  name="ProdQuan">
+      <div style="color: azure;background-color: black;" [hidden]="ProdQuan.valid || ProdQuan.untouched"
+      class="alert alert-danger">
+      Product Quantity is required
+      </div>
+   </div>
+   
+
+
+   <button type="submit" class="btn btn-success" [disabled]="!addproductForm.form.valid">  AddProduct  </button> 
+</form>
+
+
+<br>
+<br>
+
+
+<div *ngIf="msg">
+    <h3>{{msg}}</h3>
+</div> 
+</div>

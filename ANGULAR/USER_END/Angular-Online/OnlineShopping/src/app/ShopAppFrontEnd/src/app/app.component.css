@@ -1,0 +1,25 @@
+/* .header{
+     
+    background: url('https://images.indianexpress.com/2020/11/Master-teaser-1200.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+   
+position: fixed;
+  top: 0;
+  left: 0;
+
+
+width: 100%;
+  height: auto;
+   
+} */
+
+
+.navbar
+{
+    background-color: rgb(170, 228, 187);
+}

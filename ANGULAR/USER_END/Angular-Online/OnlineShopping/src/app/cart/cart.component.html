@@ -1,0 +1,68 @@
+
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-xl-7 col-lg-8 col-md-7">
+      <div class="border border-gainsboro p-3">
+
+        <h2 class="h6 text-uppercase mb-0">Cart</h2>
+      </div>
+      <div *ngFor="let item of cart" >
+
+      <div class="border border-gainsboro p-3 mt-3 clearfix item">
+        <div class="text-lg-left">
+          <i class="fa fa-ticket fa-2x text-center" aria-hidden="true"></i>
+        </div>
+        <div class="col-lg-5 col-5 text-lg-left" >
+        <h2>{{item.Prod_Name}}</h2>
+        <br>
+        <h3>Price: Rs. {{item.Prod_Price}}</h3>
+        <br>
+            <span style="display: inline;margin-top: 20px;">
+                <button style="display: inline;" (click)="changeQty(item.Cart_Id,item.Prod_Quantity)" class="btn btn-primary" >+</button>&nbsp;
+                <h3 style="display: inline;">Quantity:{{item.Prod_Quantity}}</h3>&nbsp;
+                <button  style="display: inline;" (click)="(item.Prod_Quantity===1)?'':changeQty(item.Cart_Id,-1)" class="btn btn-primary">-</button>
+
+                <br>
+                <br>
+                <h3 >Total Cost: Rs. {{item.Prod_Price* item.Prod_Quantity  }}</h3>
+            </span>
+        </div>
+        <div class="remove-item pt-4">
+          <button (click)="removeFromCart(item.Cart_Id)" class="btn btn-primary" style="font-size:12px;">
+            Delete
+          </button>
+        </div>
+      </div><!-- item -->
+      </div>
+    </div>
+
+    <div>
+
+    </div>
+    <br>
+    <div *ngIf="cartTotal==0; else elseBlock"><h2>Your Cart is Empty  <a [routerLink]="['/Products']" routerLinkActive="active">Continue Shopping</a></h2></div>
+
+    <ng-template #elseBlock>
+    <div class="col-xl-3 col-lg-4 col-md-5 totals">
+      <div class="border border-gainsboro px-3">
+        <div class="border-bottom border-gainsboro">
+          <p class="text-uppercase mb-0 py-3"><strong>Order Summary</strong></p>
+        </div>
+        <div class="totals-item d-flex align-items-center justify-content-between mt-3">
+          <p class="text-uppercase">Subtotal</p>
+          <p class="totals-value" id="cart-subtotal">₹{{cartTotal}}</p>
+        </div>
+        <div class="totals-item d-flex align-items-center justify-content-between">
+          <p class="text-uppercase">Estimated Tax</p>
+          <p class="totals-value" id="cart-tax">₹{{cartTotal*.05}}</p>
+        </div>
+        <div class="totals-item totals-item-total d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-gainsboro">
+          <p class="text-uppercase"><strong>Total</strong></p>
+          <p class="totals-value font-weight-bold cart-total">₹{{cartTotal*1.05 }}</p>
+        </div>
+      </div>
+      <button class="mt-3 btn btn-primary w-100 d-flex justify-content-between"><a (click)="redirect()" >Pay Now <span class="totals-value cart-total">₹{{cartTotal*1.05}}</span></a></button>
+    </div>
+  </ng-template>
+  </div>
+</div><!-- container -->

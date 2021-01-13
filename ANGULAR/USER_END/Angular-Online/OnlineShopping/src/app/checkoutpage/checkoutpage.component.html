@@ -1,0 +1,180 @@
+<body>
+    <div style="text-align: center;font-size: large;"><i><b>Check Out Page</b></i></div>
+<div class="row">
+
+<div class="col-75">
+    <div class="container">
+
+<form #checkoutForm="ngForm" novalidate class="form-horizontal">
+
+
+    <div style="text-align:justify;">
+    <h4>Billing Address</h4>
+    </div>
+
+    <div >
+
+
+        <div class="form-group">
+        <label for="fullname" class="required">Customer Name</label>
+        <input required #fullname="ngModel" type="text" [(ngModel)]="checkout.fullname" id="fullname" class="form-control"
+        name="fullname" placeholder="Enter Full Name">
+        <div *ngIf="fullname.invalid && (fullname.touched || fullname.dirty)" class="error">
+          Fullname is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="email" class="required">Email Id</label>
+        <input required #email="ngModel" type="text" [(ngModel)]="checkout.email" id="email" class="form-control"
+        name="email" placeholder="Enter valid email address">
+        <div *ngIf="email.invalid && (email.touched || email.dirty)" class="error">
+          Email is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="address" class="required">Door Number</label>
+        <input required #address="ngModel" type="text" [(ngModel)]="checkout.address"  class="form-control" id="address"
+        name="address" placeholder="Enter H.No/Door.No">
+        <div *ngIf="address.invalid && (address.touched || address.dirty)" class="error">
+          Door Number is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="street" class="required">Street</label>
+        <input required #street="ngModel" type="text" [(ngModel)]="checkout.street" class="form-control" id="street"
+        name="street" placeholder="Enter the street">
+        <div *ngIf="street.invalid && (street.touched || street.dirty)" class="error">
+          Street is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="city" class="required">City</label>
+        <input required #city="ngModel" type="text" [(ngModel)]="checkout.city" class="form-control" id="city"
+        name="city" placeholder="Enter City">
+        <div *ngIf="city.invalid && (city.touched || city.dirty)" class="error">
+          City is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="state" class="required">State</label>
+        <input required #state="ngModel" type="text" [(ngModel)]="checkout.state" class="form-control" id="state"
+        name="state" placeholder="Enter State">
+        <div *ngIf="state.invalid && (state.touched || state.dirty)" class="error">
+          State is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="zip" class="required">Zip Code</label>
+        <input required #zip="ngModel" type="text" [(ngModel)]="checkout.zip" class="form-control" id="zip"
+        name="zip" placeholder="Enter Zip Code">
+        <div *ngIf="zip.invalid && (zip.touched || zip.dirty)" class="error">
+          Zip Code is required</div>
+        </div>
+
+
+        <h4>Payment Details</h4>
+
+        <div class="form-group">
+        <label for="cardname" class="required">Cardholder Name</label>
+        <input required #cardname="ngModel" type="text" [(ngModel)]="checkout.cardname" class="form-control" id="cardname"
+        name="cardname" placeholder="Enter name as on Debit/Credit Card">
+        <div *ngIf="cardname.invalid && (cardname.touched || cardname.dirty)" class="error">
+          Name is required</div>
+        </div>
+
+        <div class="form-group">
+        <label for="cardnumber" class="required">Card Number</label>
+        <input required #cardnumber="ngModel" type="text" [(ngModel)]="checkout.cardnumber" class="form-control" id="cardnumber"
+        name="cardnumber" pattern="[0-9]{16}" placeholder="Enter the Card Number" min="16" max="16">
+        <div *ngIf="cardnumber.invalid && (cardnumber.touched || cardnumber.dirty)" class="error">
+          Cardnumber is required</div>
+        </div>
+
+
+        <div class="grid-container">
+
+        <div class="form-group">
+        <label for="exp Date" class="required" >Expiry Date</label>
+        <div class="grid-container">
+        <div class="col-50" >
+            <select name="month" class="form-control" style="float: left;">
+                <option value="select">-select-</option>
+                <option value="01">(01)January</option>
+                <option value="02">(02)February</option>
+                <option value="03">(03)March</option>
+                <option value="04">(04)April</option>
+                <option value="05">(05)May</option>
+                <option value="06">(06)June</option>
+                <option value="07">(07)July</option>
+                <option value="08">(08)August</option>
+                <option value="09">(09)September</option>
+                <option value="10">(10)October</option>
+                <option value="11">(11)November</option>
+                <option value="12">(12)December</option>
+            </select>
+        </div>
+        <div class="col-50">
+            <select name="year" class="form-control">
+                <option value="select">-select-</option>
+                <option value="2030">2030</option>
+                <option value="2029">2029</option>
+                <option value="2028">2028</option>
+                <option value="2027">2027</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+
+            </select>
+        </div>
+        </div>
+
+        </div>
+        &nbsp;
+        <div class="form-group" style="box-sizing:border-box;width:175px">
+        <label for="cvv" class="required">CVV</label>
+        <input required #cvv="ngModel" type="password" [(ngModel)]="checkout.cvv" class="form-control" id="cvv"
+        name="cvv" maxlength="3" pattern="[0-9]{3}" placeholder="Enter CVV">
+        <div *ngIf="cvv.invalid && (cvv.touched || cvv.dirty)" class="error">
+          CVV is required</div>
+        </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <div >
+          <button (click)="OnSubmit()" type="submit" class="btn btn-success" [disabled]='!checkoutForm.valid'>Check Out</button>
+        </div>
+        </div>
+
+
+      </div>
+</form>
+</div>
+</div>
+
+<div *ngIf="order">
+<div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+        </span>
+      </h4>
+      <div *ngFor="let item of order">
+      <p><a >{{item.Prod_Name}}</a>   &nbsp;   <span class="price">{{item.Prod_Price}}</span></p>
+      <p>  Quantity   &nbsp;&nbsp;{{item.Prod_Quantity}} </p>
+      <hr>
+      </div>
+      <p> Tax  &nbsp; &nbsp;&nbsp; &nbsp;{{total1*1.05-total1}}</p>
+      <hr>
+      <p>Total: <span class="price" style="color:black"><b> {{total1*1.05}}</b></span></p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+

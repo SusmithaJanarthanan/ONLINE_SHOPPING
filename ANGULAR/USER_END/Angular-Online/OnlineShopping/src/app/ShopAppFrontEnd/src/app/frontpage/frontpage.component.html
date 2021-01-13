@@ -1,0 +1,39 @@
+
+<app-nameheader ></app-nameheader>
+<div class="header">
+<div class="main">
+    <br>
+    <br>
+
+<button class="btn btn-success" (click)="Details()">Retailers Details</button>
+<br>
+<br>
+<button  class="btn btn-success" (click)="Add_Product()">Add Product </button>
+<br>
+<br>
+<button  class="btn btn-success" (click)="Update_Product()">Update Product </button>
+<br>
+<br>
+<button class="btn btn-success" (click)="GetStatus()">View Product Status</button>
+<br>
+<br>
+
+<button class="btn btn-danger" (click)="DeleteProducts()">Delete Products</button>
+<br>
+<br>
+<button  class="btn btn-danger" (click)="Delete()">Delete Account </button>
+<br>
+<br>
+<button class="btn btn-danger" (click)="ChangePass()">Change Password</button>
+<br>
+<br>
+<div *ngIf="msg">
+    <h4>Are you sure u want delete account</h4>
+    <button class="btn btn-danger" (click)="DeleteSure()">Yes</button>
+</div>
+</div>
+</div>
+
+
+
+

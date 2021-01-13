@@ -1,0 +1,41 @@
+
+
+
+<h1 style="text-align:center">Product Details</h1>
+<br>
+<br>
+<button class="btn btn-primary" (click)="goBack()">Go back to Home</button>
+<br>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>Order id</th>
+            <th>User Id</th>
+            <th>Product Id</th>
+            <th>Product Price</th>
+           
+            <th>Product Quantity</th>
+            <th>Retailer Id</th>
+           
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr *ngFor="let ord of orders">
+            <td>{{ord.Order_Id}}</td>
+            <td>{{ord.User_id}}</td>
+            <td>{{ord.Prod_id}}</td>
+            <td>{{ord.Prod_Price}}</td>
+           
+            <td>{{ord.Prod_Quantity}}</td>
+            <td>{{ord.Retail_id}}</td>
+            
+            <!-- <td><a class="btn btn-sm text-white btn-danger" (click)="DeleteProduct(prod.Prod_Id)">Delete</a></td>
+            <td><a routerLink="/editProduct/{{prod.Prod_Id}}">update</a></td> -->
+        </tr>
+    </tbody>
+
+    
+</table>

@@ -1,0 +1,38 @@
+<h1 style="text-align:center">New Request Details</h1>
+<br>
+<br>
+
+<button class="btn btn-primary" (click)="goBack()">Go back to Home</button>
+<br>
+<br>
+<table class="center">
+    <thead>
+        <tr>
+            <th>Update Id</th>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Quantity</th>
+            <th>Product update status</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+
+    
+    <tbody>
+        <tr *ngFor="let newProd of newProducts">
+            <td>{{newProd.Update_Id}}</td>
+            <td>{{newProd.Prod_Id}}</td>
+           
+            <td>{{newProd.Prod_Name}}</td>
+            <td>{{newProd.Prod_Price}}</td>
+           
+            <td>{{newProd.Prod_Quantity}}</td>
+            <td>{{newProd.Update_Status}}</td>
+            
+            <td><a class="btn btn-sm text-white btn-danger" (click)="DeleteNewProduct(prod.Prod_Id)">Delete</a></td>
+            <td><a routerLink="/editNewProd/{{newProd.Update_Id}}">Update</a></td>
+        </tr>
+    </tbody>
+</table>

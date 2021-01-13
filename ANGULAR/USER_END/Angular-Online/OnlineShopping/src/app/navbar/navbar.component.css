@@ -1,0 +1,46 @@
+.buttn {
+color: rgb(56, 109, 224);
+padding: 10px;
+font-size: 12px;
+border: none;
+background-color: #efefef;
+}
+
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f1f1f1;
+ min-width: 200px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .buttn
+{
+background-color: rgb(175, 209, 240);
+
+}
+
+.dropbtn {
+border: none;
+font-family: arial, sans-serif;
+color: #069;
+cursor: pointer;
+}
+
+.btn{
+background-color: #efefef;
+font-size: 12px;
+}
+
+.bttn:hover{
+  background-color: rgb(69, 156, 238);
+}
+

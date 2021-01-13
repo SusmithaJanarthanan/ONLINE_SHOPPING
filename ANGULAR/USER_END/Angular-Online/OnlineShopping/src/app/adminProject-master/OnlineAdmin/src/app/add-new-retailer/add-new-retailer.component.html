@@ -1,0 +1,115 @@
+<!--
+<h1 style="text-align:center">Add new retailer</h1><br>
+<br>
+
+
+<form #retailerPost="ngForm" (ngSubmit)="AddRetailer(retailerPost.value)">
+
+
+    <input type="text"  name="Company_Name" #name="ngModel" placeholder="Company name">
+     <div style="color: azure;background-color: black;"   [hidden]= "Company_Name.valid || name.untouched"
+           class="alert alert-danger">
+        Company Name is required
+      </div>
+    <br>  <br>
+
+    <input type="text" name="Retail_Name" ngModel placeholder="Retail name">
+     <div  style="color: azure;background-color: black;"[hidden]="password.valid || password.untouched"
+          class="alert alert-danger">
+      Retailer Name is required
+      </div>
+    <br>  <br>
+
+    <input type="text" pattern="[7-9]{1}[0-9]{9}" name="Retail_Phone" ngModel placeholder="Retail Phone">
+     <div  style="color: azure;background-color: black;"  [hidden]="phone.valid ||phone.untouched"
+          class="alert alert-danger">
+      Mobile Number is required
+      </div>
+    <br>  <br>
+
+    <input type="email" name="Retail_Email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" ngModel placeholder="Retail Email">
+    <div  style="color: azure;background-color: black;" [hidden]="Email.valid || Email.untouched"
+            class="alert alert-danger">
+        Email is required
+        </div>
+    <br>  <br>
+
+    <input type="text" name="Retail_Status" ngModel placeholder="Retail Status">
+    <label>Retail Status</label>
+    <select class="form-control" placeholder="Retail Status" formControlName="Retail_Status">
+        <option value="approved">approved</option>
+        <option value="pending">pending</option></select>
+   <br>  <br>
+
+
+    <button type="submit" class="btn btn-success">Add Retailer</button>
+    <button class="btn btn-primary" (click)="goBack()" >Go back to Home</button>
+<br>
+</form> -->
+
+
+
+<div class="head">
+  <h3 style="text-align: center;">A-Z Store</h3>
+  </div>
+<div class="header">
+  <br>
+  <br>
+<form #retailerPost="ngForm" (ngSubmit)="AddRetailer()" >
+  <div class="form-group">
+      <label for="Company_Name">Enter Company_Name</label>
+      <input type="text" name="Company_Name" id="Company_Name" class="form-control" required
+      [(ngModel)]="retailer.Company_Name" #name="ngModel">
+      <div style="color: azure;background-color: black;"   [hidden]= "name.valid || name.untouched"
+           class="alert alert-danger">
+        Company_Name is required
+      </div>
+    </div>
+  <div class="form-group">
+      <label for="password">Enter Username</label>
+      <input type="text" name="password" id="password" class="form-control" required
+      [(ngModel)]="retailer.Retail_Name" #password="ngModel">
+      <div  style="color: azure;background-color: black;"[hidden]="password.valid || password.untouched"
+          class="alert alert-danger">
+      Retailer Name is required
+      </div>
+  </div>
+
+    <div class="form-group">
+      <label for="phone">Enter mobile number</label>
+      <input type="number"   max="10" name="phone" id="phone" class="form-control" required
+      [(ngModel)]="retailer.Retail_Phone" #phone="ngModel" pattern="[7-9]{1}[0-9]{9}">
+      <div  style="color: azure;background-color: black;" [hidden]="phone.valid ||phone.untouched"
+          class="alert alert-danger">
+      Mobile Number is required
+      </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Enter email-id</label>
+        <input type="email" name="Email" id="Email" class="form-control" required
+        [(ngModel)]="retailer.Retail_Email" #Email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" >
+        <div  style="color: azure;background-color: black;" [hidden]="Email.valid || Email.untouched"
+            class="alert alert-danger">
+        Email is required
+        </div>
+        </div>
+
+        <label>Retail Status</label>
+
+        <select class="form-control" placeholder="Retail Status" id="RetailStatus" name="RetailStatus" [(ngModel)]="retailer.Retail_Status" #RetailStatus="ngModel" required >
+            <option value="Approved">Approved</option>
+            <option value="Pending">Pending</option></select>
+
+       <button type="submit" class="btn btn-success" [disabled]="!retailerPost.form.valid">  Submit  </button>
+
+       <div *ngIf="msg"   class="alert alert-danger">
+        {{msg}}
+      </div>
+
+</form>
+</div>
+
+
+

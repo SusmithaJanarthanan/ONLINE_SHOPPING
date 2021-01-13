@@ -1,0 +1,42 @@
+
+<app-nameheader></app-nameheader>
+<div class="header">
+<br>
+<br>
+
+<h2 style="text-align: center;"> New Product status</h2>
+<div *ngIf="(productstatus !=null)">
+<table  class="table table-striped">
+    <tr *ngIf="productstatus">
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th> Status</th>
+    
+</tr>
+
+<tr *ngFor="let p of productstatus">
+        <td>{{p.Prod_Id}}</td>
+        <td> {{p.Prod_Name}} </td>
+        <td>{{p.Prod_Status}}</td>   
+     
+</tr>
+</table>
+</div>
+<br>
+<br>
+<h2 style="text-align: center;">Updated Product Status</h2>
+<table  class="table table-striped">
+    <tr *ngIf="updatestatus">
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th> Status</th>
+    
+</tr>
+<tr *ngFor="let p of updatestatus">
+        <td>{{p.Prod_Id}}</td>
+        <td> {{p.Prod_Name}} </td>
+        <td>{{p.Update_Status}}</td>   
+     
+</tr>
+</table>
+</div>

@@ -1,0 +1,42 @@
+<header style="background-color:#e6f0f5 ;">
+  <h2><span class="brand-logo"><a routerLink="Home" style="text-decoration: none;">Go Shoppy</a></span>
+    <!-- <label for="menu-toggle"><span class="ti-menu"></span></label></h2> -->
+    </h2>
+  <input type="checkbox" id="menu-toggle" />
+  <div class="main-menu">
+    <div class="menu-responsive">
+      <label for="menu-toggle">Close</label>
+      <form action="" class="search">
+        <!-- <input type="search" placeholder="search store" />
+        <button><span class="span ti-search"></span></button> -->
+      </form>
+    </div>
+    <div *ngIf="name==='' else elseBlock" >
+    <!-- <a  [routerLink]="name===''? ['/Login'] : ['']" >{{name===""?"Login":name}}</a>&nbsp; -->
+    <a  [routerLink]=" ['/Login']" >Login</a>&nbsp;&nbsp;
+    <a routerLink="SignUp">Sign up</a>
+    </div>
+    <ng-template #elseBlock>
+      <a style="text-decoration: none;"  (click)="myprofile(this.id)" ><i class="fa fa-user-o" aria-hidden="true"></i> {{name}}</a>
+      <a style="text-decoration: none;" (click)="myorders(this.id)">My Orders</a>
+      <a style="text-decoration: none;" routerLink="Home" (click)="logout()">Logout</a>&nbsp;&nbsp;&nbsp;
+      <a style="text-decoration: none;" routerLink="Change">ChangePassword</a>
+
+    </ng-template>
+  </div>
+</header>
+
+  <div style="padding:10px;background-color:#e6f0f5 ;">
+    <ul >
+      <li class="lists" style="display: inline;padding:10px;"><a class="linki" style="text-decoration: none;color: rgb(56, 109, 224);font-size: 15px;" routerLink="Home">Home</a></li>
+      <li class="lists" style="display: inline;padding:10px;"><a class="linki" style="text-decoration: none;color: rgb(56, 109, 224);font-size: 15px;" routerLink="Products">Products</a></li>
+      <li class="lists" style="display: inline;padding:10px;"><a class="linki" style="text-decoration: none;color: rgb(56, 109, 224);font-size: 15px;" [routerLink]="['Cart',id]">Cart</a></li>
+      <li class="lists" style="display: inline;padding:10px;"><a class="linki" style="text-decoration: none;color: rgb(56, 109, 224);font-size: 15px;" [routerLink]="['Wishlist',id]">Wishlist</a></li>
+      <li class="lists" style="display: inline;padding:10px;"><a class="linki" style="text-decoration: none;color: rgb(56, 109, 224);font-size: 15px;" [routerLink]="['Compare',id]">Compare</a></li>
+      <li class="lists" style="display: inline;padding:10px;"><app-navbar class="linki"></app-navbar></li>
+    </ul>
+    </div>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

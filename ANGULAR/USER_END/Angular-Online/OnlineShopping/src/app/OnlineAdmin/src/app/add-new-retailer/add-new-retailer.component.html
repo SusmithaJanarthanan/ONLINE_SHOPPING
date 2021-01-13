@@ -1,0 +1,26 @@
+<p>add-new-retailer works!</p>
+<h1 style="text-align:center">Add new retailer</h1><br>
+<br>
+
+
+<form #retailerPost="ngForm" (ngSubmit)="AddRetailer(retailerPost.value)">
+
+
+    <input type="text" name="Company_Name" ngModel placeholder="Company name">
+    <br>  <br>
+
+    <input type="text" name="Retail_Name" ngModel placeholder="Retail name">
+    <br>  <br>
+
+    <input type="number" name="Retail_Phone" ngModel placeholder="Retail Phone">
+    <br>  <br>
+
+    <input type="email" name="Retail_Email" ngModel placeholder="Retail Email">
+    <br>  <br>
+
+    <input type="text" name="Retail_Status" ngModel placeholder="Retail Status">
+    <br>  <br>
+  
+
+    <button type="submit" class="btn btn-success">Add Retailer</button>
+</form>

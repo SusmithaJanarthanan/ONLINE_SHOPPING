@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+.details p
+{
+   margin-left: 40%;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.header{
+
+    background: url('https://i.ibb.co/x5LhTkt/BAck-ground.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+
+
+position: absolute;
+  top: 15%;
+  left: 0;
+
+
+width: 100%;
+  height: auto;
+
+}
+span{
+    font-weight: bold;
+}
+th,td{
+    text-align: center;
+}
+.total {
+    display: block;
+     margin: 0 auto;
+ }

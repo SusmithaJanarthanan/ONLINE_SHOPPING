@@ -1,0 +1,105 @@
+<div class="container"  style="background-color: #e6f0f5;width: fit-content;margin-top:10px ;">
+<div class="header" >
+  <div *ngIf="msg"  class="alert alert-danger">
+    {{msg}}
+  </div>
+  <div *ngIf="user1">
+    <h3>Successfully Added</h3>
+   </div>
+  <br>
+<form #loginForm="ngForm" (ngSubmit)="Add()" >
+
+  <div class="form-group">
+      <label for="User_Name">Enter UserName</label>
+      <input type="text" name="User_Name" id="User_Name" class="form-control" required
+      [(ngModel)]="user.User_Name" #name="ngModel">
+      <div [hidden]="name.valid || name.untouched"
+           class="alert alert-danger">
+           UserName is required
+      </div>
+    </div>
+
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" class="form-control" required
+    [(ngModel)]="user.User_Password" #password="ngModel" parent=true>
+    <div [hidden]="password.valid || password.untouched"
+        class="alert alert-danger">
+    Password is required
+    </div>
+</div>
+
+<!-- <div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input type="password" name="password2" id="password2" class="form-control" required
+    [(ngModel)]="dummy.retype" #password2="ngModel" appComparePassword="password">
+    <div [hidden]="password2.valid || password2.untouched"
+        class="alert alert-danger">
+    Confirm Password is required
+    </div>
+    <div *ngIf="password2.dirty && ((password.errors && password.errors.compare) || (password2.errors && password2.errors.compare))" class="alert alert-danger">Doesn't match</div>
+</div> -->
+
+
+    <div class="form-group">
+      <label for="phone">Enter mobile number</label>
+      <input type="number"  min="-1" max="10" onchange="return check_value()" name="phone" id="phone" class="form-control" required
+      [(ngModel)]="user.User_Phone" #phone="ngModel" pattern="[7-9]{1}[0-9]{9}">
+      <div [hidden]="phone.valid || phone.untouched"
+          class="alert alert-danger">
+      Mobile Number is required
+      </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Enter email-id</label>
+        <input type="email" name="Email" id="Email" class="form-control" required
+        [(ngModel)]="user.User_Email" #Email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" >
+        <div [hidden]="Email.valid || Email.untouched"
+            class="alert alert-danger">
+        Email is required
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="User_Add">Enter Address</label>
+          <input type="text" name="User_Add" id="User_Add" class="form-control" required
+          [(ngModel)]="user.User_Address" #name="ngModel">
+          <div [hidden]="name.valid || name.untouched"
+               class="alert alert-danger">
+               Address is required
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="User_City">Enter City</label>
+          <input type="text" name="User_City" id="User_City" class="form-control" required
+          [(ngModel)]="user.User_City" #name="ngModel">
+          <div [hidden]="name.valid || name.untouched"
+               class="alert alert-danger">
+               City is required
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="User_Country">Enter Country</label>
+          <input type="text" name="User_Country" id="User_Country" class="form-control" required
+          [(ngModel)]="user.User_Country" #name="ngModel">
+          <div [hidden]="name.valid || name.untouched"
+               class="alert alert-danger">
+               Country is required
+          </div>
+        </div>
+
+
+
+  <button type="submit" class="btn btn-success" [disabled]="!loginForm.form.valid" >  Submit  </button>
+
+
+</form>
+
+
+</div>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="dropdown">
+  <button class="buttn" style="background:none ;font-size: 15px;">All Categories</button>
+  <div class="dropdown-content" >
+    <li  *ngFor="let item of Category" style="display: block;font-size: 15px;">
+    <button class="btn"
+    (click)="showDetails1(item.Category_Id)">{{item.Category_Name}}</button>
+    </li>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

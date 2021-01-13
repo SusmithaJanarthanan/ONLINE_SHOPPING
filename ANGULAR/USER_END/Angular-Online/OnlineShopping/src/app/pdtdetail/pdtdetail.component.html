@@ -1,0 +1,51 @@
+<div *ngIf="product">
+<div *ngFor="let item of product">
+<div class="container">
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+          <div class="large-5 column">
+            <div class="xzoom-container">
+        <pinch-zoom>
+              <img class="big-image" id="zoom" src="{{item.Prod_Image}}" style="height:500px" />
+        </pinch-zoom>
+            </div>
+        </div>
+        </div>
+        <div class="details col-md-6">
+          <h3 class="product-title">{{item.Prod_Name}}</h3>
+          <h3 class="product-title">{{item.Category_Name}}</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">41 reviews</span>
+          </div>
+          <p class="product-description"><p>{{item.Prod_Description}}</p>
+          <h4 class="price">current price: Rs. <span>{{item.Prod_Price}}</span></h4>
+          <p>Only <strong>{{item.Prod_Quantity}} </strong>available</p>
+
+          <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+          <p class="vote"> Sold By <strong>{{item.Company_Name}}</strong>
+            &nbsp;
+
+          <div class="action">
+            <button class="add-to-cart btn btn-default" type="button"  (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')?'':addToCart(item)">add to cart</button> &nbsp;
+            <button class="like btn btn-default" type="button" (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')?'':addToWishlist(item.Prod_Id)" data-toggle="tooltip" title="Add to Wishlist"><span class="fa fa-heart"></span></button>&nbsp;
+            <button class="like btn btn-default" type="button" (click)="(item.Prod_Status==='pending'||item.Prod_Quantity<=0 ||item.Prod_Status==='Deleted')?'':addToCompare(item)"  data-toggle="tooltip" title="Add to Compare"><i class="fa fa-exchange"></i> Add to Compare</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
